@@ -48,7 +48,7 @@ local plugins = {
   "glepnir/lspsaga.nvim",
   {
     'nvim-telescope/telescope.nvim',
-    tag = '0.1.0',
+    -- tag = '0.1.0',
     dependencies = { { 'nvim-lua/plenary.nvim' } }
   },
   {
@@ -86,7 +86,8 @@ local plugins = {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
-  }
+  },
+  'navarasu/onedark.nvim'
 }
 
 local opts = {}
