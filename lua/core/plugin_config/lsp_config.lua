@@ -22,10 +22,12 @@ require('lspsaga').setup({
 
 vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { silent = true })
 vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<cr>', { silent = true })
+vim.keymap.set('n', 'gh', '<Cmd>Lspsaga show_line_diagnostics<cr>', { silent = true })
 vim.keymap.set('n', '<leader>lj', '<Cmd>Lspsaga diagnostics_jump_next<cr>', { silent = true })
 vim.keymap.set('n', '<leader>lk', '<Cmd>Lspsaga diagnostics_jump_prev<cr>', { silent = true })
 vim.keymap.set({"n","v"}, "<leader>a", "<cmd>lua vim.lsp.buf.code_action()<CR>", { silent = true })
-vim.keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", { silent = true })
+vim.keymap.set("n", "<leader>lr", "<cmd>Lspsaga rename<CR>", { silent = true })
+vim.keymap.set("n", "<leader>gr", "<cmd>Lspsaga finder<CR>", { silent = true })
 vim.keymap.set("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format()<CR>", { silent = true })
 
 require("lspconfig").lua_ls.setup {

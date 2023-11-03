@@ -37,7 +37,6 @@ vim.keymap.set('n', '<Space>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<Space>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<Space>fb', builtin.buffers, {silent=true})
 vim.keymap.set('n', '<Space>ls', builtin.lsp_document_symbols, {silent= true})
-vim.keymap.set('n', '<Space>gr', builtin.lsp_references, {silent= true})
 vim.keymap.set('n', '<Space>js', builtin.jumplist, {silent= true})
 vim.keymap.set('n', '<Space>js', builtin.jumplist, {silent= true})
 

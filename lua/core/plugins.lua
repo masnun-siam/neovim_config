@@ -45,7 +45,20 @@ local plugins = {
   "williamboman/mason.nvim",
   "neovim/nvim-lspconfig",
   "williamboman/mason-lspconfig.nvim",
-  "glepnir/lspsaga.nvim",
+  {
+      'nvimdev/lspsaga.nvim',
+      config = function()
+          require('lspsaga').setup({
+              ui = {
+                code_action = ''
+              },
+        })
+      end,
+      dependencies = {
+          'nvim-treesitter/nvim-treesitter',
+          'nvim-tree/nvim-web-devicons'
+      }
+  },
   {
     'nvim-telescope/telescope.nvim',
     -- tag = '0.1.0',
