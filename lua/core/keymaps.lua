@@ -13,4 +13,13 @@ vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.keymap.set({'n', 'v'}, '<leader>y', '"*y')
 vim.keymap.set({'n', 'v'}, '<leader>p', '"*p')
 
+vim.keymap.set('v', '<', '<gv')
+vim.keymap.set('v', '>', '>gv')
+
+vim.cmd([[
+  command GoToFile lua require('telescope.builtin').find_files()
+  command Commands lua require('telescope.builtin').commands()
+  command ZenMode lua require('zen-mode').toggle({window = {width = 0.8}})
+]])
+
 

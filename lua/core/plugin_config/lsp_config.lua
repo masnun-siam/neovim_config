@@ -55,6 +55,14 @@ require("lspconfig").pyright.setup {
   capabilities = capabilities,
 }
 
+require("lspconfig").phpactor.setup {
+  capabilities = capabilities,
+}
+
+vim.cmd([[
+  let g:phpactor_ide_helper_path = '_ide_helper.php'
+]])
+
 require'lspconfig'.dartls.setup{
   cmd = { "dart", 'language-server', '--protocol=lsp' },
   capabilities = capabilities,

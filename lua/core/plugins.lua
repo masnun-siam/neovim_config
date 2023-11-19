@@ -100,7 +100,28 @@ local plugins = {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
   },
-  'navarasu/onedark.nvim'
+  'navarasu/onedark.nvim',
+  -- Lua
+  {
+    "folke/zen-mode.nvim",
+    opts = {
+      plugins = {
+        alacritty = {
+          enabled = true,
+          font = "22", -- font size
+          background_opacity = "1", -- 0-1
+        },
+        tmux = { enabled = true },
+      },
+    }
+  },
+  'hankchiutw/flutter-reload.vim',
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {} -- this is equalent to setup({}) function
+  },
+  'EmranMR/tree-sitter-blade'
 }
 
 local opts = {}
