@@ -4,6 +4,10 @@ vim.opt.winblend = 0
 vim.opt.wildoptions = 'pum'
 vim.opt.pumblend = 5
 vim.opt.background = 'dark'
+-- get color scheme from env named NVIM_COLOR
+-- vim.g.colors_name = vim.env.NVIM_THEME or 'gruvbox'
+-- get rid of line highlight
+vim.cmd [[highlight clear CursorLine]]
 -- Lua
 require('onedark').setup {
     style = 'darker'

@@ -121,7 +121,8 @@ local plugins = {
     event = "InsertEnter",
     opts = {} -- this is equalent to setup({}) function
   },
-  'EmranMR/tree-sitter-blade'
+  'EmranMR/tree-sitter-blade',
+  'RobertBrunhage/flutter-riverpod-snippets',
 }
 
 local opts = {}

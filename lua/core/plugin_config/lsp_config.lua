@@ -59,6 +59,10 @@ require("lspconfig").phpactor.setup {
   capabilities = capabilities,
 }
 
+require("lspconfig").gopls.setup {
+  capabilities = capabilities,
+}
+
 vim.cmd([[
   let g:phpactor_ide_helper_path = '_ide_helper.php'
 ]])
