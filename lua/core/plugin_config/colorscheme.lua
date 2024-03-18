@@ -9,11 +9,11 @@ vim.opt.background = 'dark'
 -- get rid of line highlight
 vim.cmd [[highlight clear CursorLine]]
 -- Lua
-require('onedark').setup {
-    style = 'darker'
-}
+-- require('onedark').setup {
+--     style = 'darker'
+-- }
 require('onedark').load()
--- vim.cmd [[ colorscheme gruvbox ]]
+-- vim.cmd [[ colorscheme tokyonight-day ]]
 --
 -- require('tokyonight').setup {
 --   transparent = vim.g.transparent_enabled,
